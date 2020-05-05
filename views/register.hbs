@@ -1,0 +1,22 @@
+<h1>Soy la pagina de register</h1>
+
+<form action="/register" method="POST">
+
+<input type="text" name="name" placeholder="name">
+
+<input type="password" name="password" placeholder="password">
+
+<input type="password" name="confirmPassword" placeholder="confirm password">
+
+<input type="text" name="email" placeholder=" email">
+
+<button type="submit"></button>
+
+  {{#each errors}}
+    <div>
+      <p>{{this.msg}}</p>
+    </div>
+  {{/each}}  
+
+
+</form>
